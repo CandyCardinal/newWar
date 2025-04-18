@@ -1,0 +1,110 @@
+<html lang="en">
+
+
+    <head>
+
+        
+        <title>War!</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+
+
+
+
+
+    <body>
+
+
+        <div id="practice" style="font-size: 2rem;"></div> <!-- For practicing certain things, y'know?-->
+
+        <div id="gameBoard" class="flex"> <!-- Opens "gameBoard", the big box-->
+
+            
+            <div class="flexColumn"> <!--Opens the first of two boxes in gameBoard. Inside this box are the words "War!" "Player One Wins", etc. -->
+
+
+                <h1>War!</h1>
+
+                <h2 id="winner">Winner</h2>
+
+                <div id="end"> <!-- Opens the wordcount boxes-->
+
+                <h2>First Player has <span id="player1Count"></span> cards.</h2>
+
+                <h2>Second Player has <span id="player2Count"></span> cards.</h2>
+
+                </div> <!-- Closes the "end" div-->
+
+            </div> <!-- Closes the box with the words inside-->
+
+
+
+            <div class="flex"> <!-- Opens the second of the two boxes in gameBoard. Inside this box are the two cards and "draw"-->
+
+
+                <div id="firstPlayer" class="flexColumn player"> <!-- Opens firstPlayer, aka the first card-->
+
+
+                    <h1>First Player</h1>
+
+                        <div id="firstPlayerNumber" class="number"> <!--Opens where Player 1's number will be-->
+
+                        </div> <!-- Closes firstPlayerNumber, where player 1's number will be-->
+
+                        <div id="firstPlayerSuit" class="suit flex"> <!-- Opens where Player 1's suits will be-->
+
+                        </div> <!-- Closes where player 1's suit will be-->
+
+
+                </div> <!-- Closes firstPlayer-->
+
+
+                <h1 id="draw">Draw</h1>
+
+
+                <div id="secondPlayer" class="flexColumn player"> <!-- Opens secondPlayer, aka the second card-->
+
+
+                    <h1>Second Player</h1>
+
+                        <div id="secondPlayerNumber" class="number"> <!--Opens where Player 2's number will be-->
+
+                        </div> <!-- Closes secondPlayerNumber, where player 2's number will be-->
+
+                        <div id="secondPlayerSuit" class="suit flex"> <!-- Opens where Player 2's suits will be-->
+
+                        </div> <!-- Closes secondPlayerSuit where player 2's suit will be-->
+
+
+                </div> <!-- Closes secondPlayer-->
+
+
+
+            </div> <!-- Closes the box with the cards and the draw button -->
+
+
+
+        </div> <!-- Closes "gameBoard div "-->
+
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="./js/script.js"></script>
+
+    </body>
+
+</html>

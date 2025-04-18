@@ -1,0 +1,113 @@
+@media only screen and (max-width: 850px){
+
+    .flex{
+        flex-direction: column;
+    }
+
+
+    .flexColumn{
+
+        margin: 1rem;
+
+        width: 90%;
+
+    }
+    
+}
+
+
+body{
+
+    margin: 5%;
+
+}
+
+
+h2{
+
+    margin: 1rem 0; /*Puts margin above and beneath headings, no margins on side of them*/
+
+}
+
+
+.flex{ /*All elements with class flex, including gameBoard, and second box in gameBoard*/
+    
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+
+.flexColumn{
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 0 2rem;
+
+    width: 30%;
+
+}
+
+
+#draw{
+
+    border: solid 2px #000;
+
+    width: 8rem;
+    
+    height: 2.5rem;
+
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+
+.number{
+
+    font-size: 3rem;
+
+}
+
+.number img{
+
+    height: 120px;
+
+    width: auto;
+
+}
+
+
+.suit{ 
+
+    width: 15rem;
+
+}
+
+
+.suit img{ /*IMAGE WITH THE CLASS SUIT*/
+
+    padding: .3rem;
+
+    width: 15%;
+
+}
+
+
+.player {
+
+    border: solid 1px #000;
+
+    width: 15rem;
+
+    height: 20rem;
+
+    text-align: center;
+
+}
