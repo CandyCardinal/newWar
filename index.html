@@ -29,20 +29,56 @@
         <div id="gameBoard" class="flex"> <!-- Opens "gameBoard", the big box-->
 
             
-            <div class="flexColumn"> <!--Opens the first of two boxes in gameBoard. Inside this box are the words "War!" "Player One Wins", etc. -->
 
+            
+            <div class="flexColumn"> <!--Opens the first of two boxes in gameBoard. Inside this box are the words "War!" "Player One Wins", etc. -->
 
                 <h1>War!</h1>
 
                 <h2 id="winner">Winner</h2>
 
-                <div id="end"> <!-- Opens the wordcount boxes-->
+                    <div id="end"> <!-- Opens the wordcount boxes-->
 
-                <h2>First Player has <span id="player1Count"></span> cards.</h2>
+                        <h2>Player has <span id="playerCount"></span> cards.</h2>
 
-                <h2>Second Player has <span id="player2Count"></span> cards.</h2>
+                        <h2>Computer has <span id="computerCount"></span> cards.</h2>
 
-                </div> <!-- Closes the "end" div-->
+                            <div> <!--the div including all the math stuff-->
+
+                                <h2 id="mathOptions" class="button">Math Options?</h2>
+            
+                                    <div id="options" class="hidden">
+            
+                                        <button id="compare">Compare</button><span> <!--This span is solely to seperate the buttons--></span><button id="arithmetic">Arithmetic</button>
+            
+                                    </div> <!--closes the math options div-->
+            
+                                <h2 id="math" class="hidden"><span id="add" class="button">ADD </span><span id="multiply" class="button">MULTIPLY </span><span id="subtract" class="button">SUBTRACT</span></h2>
+            
+                                <h2 id="integers" class="hidden" style="margin-left: 1rem;">Integers? <span id="yes" class="button">YES </span><span id="no" class="button">NO</span></h2>
+            
+                                    <div class="flexColumn">
+            
+                                        <p id="compareDirections" class="hidden">Choose which player has the card that shows a greater amount.</p>
+            
+                                        <p id="addDirections" class="hidden">Add the cards' amounts together.</p>
+            
+                                        <p id="multiplyDirections" class="hidden">Multiply the cards' amounts together.</p>
+            
+                                        <p id="subtractDirections" class="hidden">Subtract Player Two's card's amount from Player One's card's amount</p> <!-- There's supposed to be a span tag here, however I don't know what it's supposed to contain-->
+
+                                        <p id="integerDirections" class="hidden">Black is positive. Red is negative.</p>
+            
+                                        <input id="playerAnswer" class="hidden" type="number" size="10">
+                                        
+                                        <button id="submit" class="button hidden">Check</button>
+            
+            
+                                    </div>
+            
+                            </div> <!-- closes the div including the math stuff-->
+
+                    </div> <!-- Closes the "end" div-->
 
             </div> <!-- Closes the box with the words inside-->
 
@@ -51,45 +87,52 @@
             <div class="flex"> <!-- Opens the second of the two boxes in gameBoard. Inside this box are the two cards and "draw"-->
 
 
-                <div id="firstPlayer" class="flexColumn player"> <!-- Opens firstPlayer, aka the first card-->
+                <div id="player" class="flexColumn player"> <!-- Opens player, aka the first card-->
 
 
                     <h1>First Player</h1>
 
-                        <div id="firstPlayerNumber" class="number"> <!--Opens where Player 1's number will be-->
+                        <div id="playerNumber" class="number"> <!--Opens where Player 1's number will be-->
 
-                        </div> <!-- Closes firstPlayerNumber, where player 1's number will be-->
+                        </div> <!-- Closes playerNumber, where player 1's number will be-->
 
-                        <div id="firstPlayerSuit" class="suit flex"> <!-- Opens where Player 1's suits will be-->
+                        <div id="playerSuit" class="suit flex"> <!-- Opens where Player 1's suits will be-->
 
                         </div> <!-- Closes where player 1's suit will be-->
 
+                    <h2 id="one" class="button hidden">Winner</h2>
 
-                </div> <!-- Closes firstPlayer-->
+
+                </div> <!-- Closes player-->
 
 
                 <h1 id="draw">Draw</h1>
 
 
-                <div id="secondPlayer" class="flexColumn player"> <!-- Opens secondPlayer, aka the second card-->
+                <div id="computer" class="flexColumn player"> <!-- Opens computer, aka the second card-->
 
 
-                    <h1>Second Player</h1>
+                    <h1>Computer</h1>
 
-                        <div id="secondPlayerNumber" class="number"> <!--Opens where Player 2's number will be-->
+                        <div id="computerNumber" class="number"> <!--Opens where Player 2's number will be-->
 
-                        </div> <!-- Closes secondPlayerNumber, where player 2's number will be-->
+                        </div> <!-- Closes computerNumber, where player 2's number will be-->
 
-                        <div id="secondPlayerSuit" class="suit flex"> <!-- Opens where Player 2's suits will be-->
+                        <div id="computerSuit" class="suit flex"> <!-- Opens where Player 2's suits will be-->
 
-                        </div> <!-- Closes secondPlayerSuit where player 2's suit will be-->
+                        </div> <!-- Closes computerSuit where player 2's suit will be-->
+
+                    <h2 id="two" class="button hidden">Winner</h2>
 
 
-                </div> <!-- Closes secondPlayer-->
+                </div> <!-- Closes computer-->
 
 
 
             </div> <!-- Closes the box with the cards and the draw button -->
+
+            
+            
 
 
 
